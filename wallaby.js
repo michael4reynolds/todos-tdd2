@@ -15,6 +15,7 @@ module.exports = wallaby => {
 
   return {
     files: [
+      'src/**/*.js',
       'test/**/*.js',
       '!test/**/*.spec.js',
     ],
