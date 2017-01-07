@@ -9,6 +9,11 @@ const todo = (state = todoInitialState, action) => {
         text: action.text,
         completed: false
       }
+    case 'TOGGLE_TODO':
+      return {
+        ...state,
+        completed: !state.completed
+      }
     default:
       return state
   }
@@ -29,6 +34,27 @@ describe('Create', () => {
   deepFreeze(action)
 
   it('can create a new todo', () => {
+    expect(todo(stateBefore, action)).toEqual(stateAfter)
+  })
+})
+
+describe('Toggle', () => {
+  const stateBefore = {
+    id: 0,
+    text: 'a todo',
+    completed: false
+  }
+  const action = {
+    type: 'TOGGLE_TODO'
+  }
+  const stateAfter = {
+    id: 0,
+    text: 'a todo',
+    completed: true
+  }
+  deepFreeze(action)
+
+  it('can toggle a todo', () => {
     expect(todo(stateBefore, action)).toEqual(stateAfter)
   })
 })
