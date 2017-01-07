@@ -15,11 +15,11 @@ module.exports = wallaby => {
 
   return {
     files: [
-      'src/**/*.js',
-      '!src/**/*.spec.js',
+      'test/**/*.js',
+      '!test/**/*.spec.js',
     ],
 
-    tests: ['src/**/*.spec.js'],
+    tests: ['test/**/*.spec.js'],
 
     env: {
       type: 'node',
