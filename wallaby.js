@@ -15,8 +15,8 @@ module.exports = wallaby => {
 
   return {
     files: [
-      'src/**/*.js',
-      'test/**/*.js',
+      'src/**/*.js*',
+      'test/**/*.js*',
       '!test/**/*.spec.js',
     ],
 
@@ -28,7 +28,7 @@ module.exports = wallaby => {
     },
 
     compilers: {
-      '**/*.js': wallaby.compilers.babel({
+      '**/*.js*': wallaby.compilers.babel({
         babel: require('babel-core'),
         presets: ['react-app'],
       }),
