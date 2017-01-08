@@ -1,14 +1,5 @@
 import deepFreeze from 'deep-freeze'
-
-const initialState = 'SHOW_ALL'
-export const visibilityFilter = (state = initialState, action) => {
-  switch (action.type) {
-    case 'SET_VISIBILITY_FILTER':
-      return action.filter
-    default:
-      return state
-  }
-}
+import visibilityFilter from '../../src/todo-app/reducers/visibility-filter'
 
 describe('Visibility Filter', () => {
   it('sets initial state', () => {
