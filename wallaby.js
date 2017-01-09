@@ -1,8 +1,8 @@
 /* eslint-disable */
-module.exports = wallaby => {
+module.exports = function (wallaby) {
   // Babel, jest-cli and some other modules are located under
   // react-scripts/node_modules, so need to let node.js know about it
-  let path = require('path');
+  var path = require('path');
   process.env.NODE_PATH +=
     path.delimiter +
     path.join(__dirname, 'node_modules') +
@@ -34,7 +34,7 @@ module.exports = wallaby => {
       }),
     },
 
-    setup: (wallaby) => {
+    setup: function (wallaby) {
       wallaby.testFramework.configure({
         // as in node_modules/react-scripts/utils/createJestConfig.js
         moduleNameMapper: {
