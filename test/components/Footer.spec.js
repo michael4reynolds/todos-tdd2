@@ -16,8 +16,8 @@ describe('Footer', () => {
   const render = () => mount(<Footer/>, mountOptions())
 
   it('renders a paragraph element', () => {
-    const todo = shallow(<Footer/>)
-    expect(todo.type()).toBe('p')
+    const footer = shallow(<Footer/>)
+    expect(footer.type()).toBe('p')
   })
 
   it('renders a filter link to show all todos', () => {
