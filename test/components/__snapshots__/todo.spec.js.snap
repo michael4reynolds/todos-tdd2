@@ -1,0 +1,17 @@
+exports[`App is crossed when completed 1`] = `
+<li
+  style={
+    Object {
+      "textDecoration": "line-through",
+    }
+  } />
+`;
+
+exports[`App is not crossed when not completed 1`] = `
+<li
+  style={
+    Object {
+      "textDecoration": "none",
+    }
+  } />
+`;
