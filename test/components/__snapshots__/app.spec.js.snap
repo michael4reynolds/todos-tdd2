@@ -1,5 +1,15 @@
 exports[`App renders a button 1`] = `
 <div>
-  <button />
+  <Connect(AddTodo) />
+  <Connect(TodoList) />
+  <Footer />
+</div>
+`;
+
+exports[`App renders a div 1`] = `
+<div>
+  <Connect(AddTodo) />
+  <Connect(TodoList) />
+  <Footer />
 </div>
 `;
