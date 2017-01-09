@@ -1,0 +1,5 @@
+exports[`App renders a button 1`] = `
+<div>
+  <button />
+</div>
+`;
