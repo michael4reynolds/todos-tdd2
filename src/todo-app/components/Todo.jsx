@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react'
+import React from 'react'
 
 const Todo = ({onClick, text, completed}) => {
   const style = {
@@ -8,8 +8,5 @@ const Todo = ({onClick, text, completed}) => {
     <li onClick={onClick} style={style}>{text}</li>
   )
 }
-
-Todo.propTypes = {}
-Todo.defaultProps = {}
 
 export default Todo
