@@ -2,7 +2,7 @@ import React from 'react'
 import {shallow, mount} from 'enzyme'
 import toJson from 'enzyme-to-json'
 import { createStore } from 'redux'
-import TodoApp from '../../src/todo-app/components/app'
+import TodoApp from '../../src/todo-app/components/App'
 import reducer from '../../src/todo-app/reducers/app'
 
 describe('App', () => {
