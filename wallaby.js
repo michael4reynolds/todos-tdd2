@@ -20,7 +20,10 @@ module.exports = function (wallaby) {
       '!test/**/*.spec.js',
     ],
 
-    tests: ['test/**/*.spec.js*'],
+    tests: [
+      'test/**/*.spec.js*',
+      '!test/**/*.spec.js.snap'
+    ],
 
     env: {
       type: 'node',
