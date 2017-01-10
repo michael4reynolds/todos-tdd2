@@ -23,13 +23,13 @@ describe('App', () => {
 
   it('is not crossed when not completed', () => {
     const todo = shallow(<Todo completed={false}/>)
-    expect(todo.props().style.textDecoration).toBe('none')
+    expect(todo.hasClass('completed')).toBe(false)
     expect(toJson(todo)).toMatchSnapshot()
   })
 
   it('is crossed when completed', () => {
     const todo = shallow(<Todo completed={true}/>)
-    expect(todo.props().style.textDecoration).toBe('line-through')
+    expect(todo.hasClass('completed')).toBe(true)
     expect(toJson(todo)).toMatchSnapshot()
   })
 })

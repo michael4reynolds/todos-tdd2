@@ -1,11 +1,11 @@
 import React from 'react'
+import classNames from 'classnames'
+import '../styles/styles.css'
 
 const Todo = ({onClick, text, completed}) => {
-  const style = {
-    textDecoration: completed ? 'line-through' : 'none'
-  }
+  let liClass = classNames({completed})
   return (
-    <li onClick={onClick} style={style}>{text}</li>
+    <li onClick={onClick} className={liClass}>{text}</li>
   )
 }
 
