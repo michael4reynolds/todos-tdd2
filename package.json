@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "babel-plugin-import": "^1.1.0",
     "deep-freeze": "^0.0.1",
     "enzyme": "^2.7.0",
     "enzyme-to-json": "^1.4.5",
@@ -10,6 +11,7 @@
     "react-scripts": "0.8.4"
   },
   "dependencies": {
+    "antd": "^2.6.1",
     "classnames": "^2.2.5",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
