@@ -15,6 +15,7 @@
     "classnames": "^2.2.5",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-icons": "^2.2.3",
     "react-redux": "^5.0.1",
     "redux": "^3.6.0"
   },
