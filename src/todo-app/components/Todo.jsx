@@ -1,11 +1,11 @@
 import React from 'react'
 import classNames from 'classnames'
-import '../styles/styles.css'
+import AngleRight from 'react-icons/lib/fa/angle-right'
 
 const Todo = ({onClick, text, completed}) => {
-  let liClass = classNames({completed})
+  let liClass = classNames({completed}, 'todo-item')
   return (
-    <li onClick={onClick} className={liClass}>{text}</li>
+    <li onClick={onClick} className={liClass}><AngleRight/>{text}</li>
   )
 }
 

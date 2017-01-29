@@ -1,9 +1,13 @@
 exports[`App is crossed when completed 1`] = `
 <li
-  className="completed" />
+  className="completed todo-item">
+  <FaAngleRight />
+</li>
 `;
 
 exports[`App is not crossed when not completed 1`] = `
 <li
-  className="" />
+  className="todo-item">
+  <FaAngleRight />
+</li>
 `;

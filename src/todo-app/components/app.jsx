@@ -8,10 +8,12 @@ import '../styles/styles.css'
 const TodoApp = () => {
   return (
     <div className="todo-app">
-      <h1 className="main-heading">Todo Lister</h1>
-      <AddTodo/>
-      <VisibleTodoList/>
-      <Footer/>
+      <div className="container">
+        <h1 className="main-heading">Todo Lister</h1>
+        <AddTodo/>
+        <VisibleTodoList/>
+        <Footer/>
+      </div>
     </div>
   )
 }

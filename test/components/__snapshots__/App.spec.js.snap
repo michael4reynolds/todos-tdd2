@@ -1,7 +1,15 @@
 exports[`App renders a div 1`] = `
-<div>
-  <Connect(AddTodo) />
-  <Connect(TodoList) />
-  <Footer />
+<div
+  className="todo-app">
+  <div
+    className="container">
+    <h1
+      className="main-heading">
+      Todo Lister
+    </h1>
+    <Connect(AddTodo) />
+    <Connect(TodoList) />
+    <Footer />
+  </div>
 </div>
 `;
